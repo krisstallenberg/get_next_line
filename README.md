@@ -3,6 +3,8 @@
 Reads from filedescriptor and returns one line at a time, excluding \n chars.
 Always free the returned line.
 
+This get_next_line implementation handles alternating file descriptors using a static array of char pointers to save references to multiple malloced buffers.
+
 ## Compiling
 During compilation, macro BUFFER_SIZE can be defined using " -D name=definition ".
 
