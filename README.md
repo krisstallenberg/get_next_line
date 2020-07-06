@@ -9,7 +9,7 @@ This get_next_line implementation handles alternating file descriptors using a s
 During compilation, macro BUFFER_SIZE can be defined using " -D name=definition ".
 
 ## Testing
-Compile source code with test.c .
-run ./a.out with one argument: the name of the file to read from.
-test.c will open the file and feed get_next_line the corresponding file descriptor.
+Compile source code with test.c.
+Run ./a.out with one argument: the name of the file to read from.
+The main in test.c will open the file and feed get_next_line the corresponding file descriptor.
 In case no arguments are given, get_next_line will read from file descriptor 0 (standard input).
